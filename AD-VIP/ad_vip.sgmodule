@@ -1,4 +1,4 @@
-#!name=Ad-vip Module
+#!name=金山,VSCO,Polar,CCCAM
 #!desc=Ad-vip 模块配置
 #!system=ios
 
@@ -54,4 +54,4 @@ http-response https?:\/\/.+\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-b
 
 
 [MITM]
-hostname = app.weilaixushi.com, api.orientlion.com, app.qdjdswkj.com, api.0954auto.com, appapi.xmblgg.com, app.ap.d3yuiw4.com, mp.weixin.qq.com, account.wps.cn, ap*.intsig.net, raw.githubusercontent.com, pan.baidu.com, btrace.qq.com, api.revenuecat.com, api.revenuecat.com,  security.wechat.com, boxer.baidu.com, api.polaxiong.com, raw.githubusercontent.com, gist.githubusercontent.com, buy.itunes.apple.com
+hostname = %APPEND% app.weilaixushi.com, api.orientlion.com, app.qdjdswkj.com, api.0954auto.com, appapi.xmblgg.com, app.ap.d3yuiw4.com, mp.weixin.qq.com, account.wps.cn, ap*.intsig.net, raw.githubusercontent.com, pan.baidu.com, btrace.qq.com, api.revenuecat.com, api.revenuecat.com,  security.wechat.com, boxer.baidu.com, api.polaxiong.com, raw.githubusercontent.com, gist.githubusercontent.com, buy.itunes.apple.com
