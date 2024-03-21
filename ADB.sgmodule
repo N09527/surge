@@ -1,0 +1,28 @@
+#!name=Fake_Vip
+#!desc=破解
+
+[Script]
+
+#buyhack
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js
+
+#sync
+http-response ^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases)  script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/syn.me.js
+
+#lightroom
+http-response ^https:\/\/photos\.adobe\.io\/v2\/accounts* script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Lightroom.js
+
+#Pdfexpert
+http-response ^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Pdfexpert.vip.js
+
+#revenuecat
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/revenuecat.js
+
+#phothop&PSexpress
+http-response ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/photoshop.js
+
+
+
+
+[MITM]
+hostname = %APPEND% api.sync.me, photos.adobe.io, license.pdfexpert.com, api.revenuecat.com, mobi,
